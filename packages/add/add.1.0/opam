@@ -1,0 +1,14 @@
+opam-version: "2.0"
+authors: "Chris Nevers <christophernevers96@gmail.com>"
+maintainer: "Chris Nevers <christophernevers96@gmail.com>"
+homepage: "https://github.com/chrisnevers/add"
+bug-reports: "https://github.com/chrisnevers/add/issues"
+dev-repo: "git://github.com/chrisnevers/add.git"
+synopsis: "Adds two numbers together. Test mkocaml pkg"
+build: [
+  ["dune" "subst"] {pinned}
+  ["dune" "build" "-p" name "-j" jobs]
+]
+depends: [
+  "dune" {build}
+]
